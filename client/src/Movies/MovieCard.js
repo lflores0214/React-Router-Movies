@@ -1,10 +1,9 @@
 import React from "react";
-import Movie from "./Movie";
 import { NavLink } from "react-router-dom";
 
 const MovieCard = props => {
-  const { title, director, metascore, stars } = props;
-  console.log(props);
+  const { stars } = props;
+  
   return (
     <NavLink to={`/movies/${props.id}`}>
       <div className="movie-card">
